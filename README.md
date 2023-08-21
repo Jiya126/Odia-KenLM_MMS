@@ -16,7 +16,8 @@ Integrating KenLM and MMS model for Odia language
 1. Run [notebook](https://github.com/Jiya126/Odia-KenLM_MMS/blob/Jiya126-patch-1/Copy_of_KenLM_.ipynb) to generate and download '5gram_test.bin' and 'lexicon_test_p.txt' files
 2. Use these files in decoding_cmds and run integration of MMS and LM
 In this step, we are getting assertion error i.e.
-![image](https://github.com/Jiya126/Odia-KenLM_MMS/assets/90051748/04d5098a-db14-444f-a5e2-9dfc8f76c638)
+![image](https://github.com/Jiya126/Odia-KenLM_MMS/assets/90051748/d0a7477f-5077-4d33-88bf-9b1b32bf10c3)
+
 #### Approaches tried so far:
 1. The error is due to unk_word token present in sentence and thus KenLM model won't be able to score it.
 But when getting tgt_dict and word being unk token there, in the Assertion error
