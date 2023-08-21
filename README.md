@@ -20,7 +20,8 @@ In this step, we are getting assertion error i.e.
 #### Approaches tried so far:
 1. The error is due to unk_word token present in sentence and thus KenLM model won't be able to score it.
 But when getting tgt_dict and word being unk token there, in the Assertion error
-![image](https://github.com/Jiya126/Odia-KenLM_MMS/assets/90051748/59a31572-5683-4bfb-af46-199e18cfa6b1)
+![image](https://github.com/Jiya126/Odia-KenLM_MMS/assets/90051748/612d8488-355d-46f0-806f-c90c24146799)
+
 
 It shows error as 
 
