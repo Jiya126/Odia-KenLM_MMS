@@ -41,7 +41,10 @@ Therefore, the problem could be with reading the dict file.
    c) But MMS deals with the characters present in its dictionary only. {Verify this}
 
    d) Inspect how are we integrating these models, parallel or sequentially; and what library are we using for that. Inspect that library and function performing that (This function is in mms_infer.py). Check what's happening there and how is it being integrated. Then later, you might go on to check if we should make our own integration function or maybe optimize the area where error is showing in pre-defined function we are using.
-   
-3. For a temporary solution, try removing all the lines from the lexicon file that contains characters not present in the dict.
-4. So, we need to map the dictionary being used here to remove those unk tokens from lexicon file, so that the assertion error doesnot occurs. This is a temporary solution, since here we are taking away the more correct words that could be present in the lexicon and increase accuracy
-5. We can expand our dict and then, use any word from lexicon file
+
+
+
+The error was with not all characters being present in the dictionary.
+Therefore, removed the characters from training data that are not in dict to create [new training data](https://github.com/Jiya126/Odia-KenLM_MMS/blob/Jiya126-patch-1/kenLM%20files/new_lm_train.txt) 
+Now, use this data to generate bin and lexicon files and run inference model. This shows no error and models are integrated successfully.
+What is left is to check the accuracy of produced transcription.
