@@ -50,4 +50,4 @@ The error was with not all characters being present in the dictionary.
 
 Therefore, removed the characters from training data that are not in dict to create [new training data](https://github.com/Jiya126/Odia-KenLM_MMS/blob/Jiya126-patch-1/kenLM%20files/new_lm_train.txt) 
 Now, use this data to generate bin and lexicon files and run inference model. This shows no error and models are integrated successfully.
-What is left is to check the accuracy of produced transcription.
+On taking the cosine similarity, we get a score of 0.58274996
