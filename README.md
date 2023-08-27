@@ -12,3 +12,14 @@ Integrating KenLM and MMS model for Odia language
 ### Issue Ticket
 [Issue](https://github.com/Samagra-Development/ai-tools/issues/211)
 
+### KenLM
+1. Run [notebook](https://github.com/Jiya126/Odia-KenLM_MMS/blob/Jiya126-patch-1/Copy_of_KenLM_.ipynb) to generate and download '5gram_test.bin' and 'lexicon_test_p.txt' files
+2. Use these files in decoding_cmds and run integration of MMS and LM
+
+### Inference
+1. Using new training data and dict, we have [lexicon](kenLM files/new_lexicon_test.txt) and [bin file](kenLM files/new_5gram_test.bin)
+2. Use these files to run the inference in [notebook](Copy_of_Fseq_MMS_ASR_Inference_Colab.ipynb)
+
+### Output
+1. On inference, the latency is reduced by 4 sec.
+2. And the WER (calculated using [jiwer](https://github.com/jitsi/jiwer)) turns out to be 0.795 
