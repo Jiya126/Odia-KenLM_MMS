@@ -17,7 +17,7 @@ Integrating KenLM and MMS model for Odia language
 2. Use these files in decoding_cmds and run integration of MMS and LM
 
 ### Inference
-1. Using new training data and dict, we have [lexicon](kenLM files/new_lexicon_test.txt) and [bin file](kenLM files/new_5gram_test.bin)
+1. Using new training data and dict, we have [lexicon](https://github.com/Jiya126/Odia-KenLM_MMS/blob/main/kenLM%20files/new_lexicon_test.txt) and [bin file](https://github.com/Jiya126/Odia-KenLM_MMS/blob/main/kenLM%20files/new_5gram_test.bin)
 2. Use these files to run the inference in [notebook](Copy_of_Fseq_MMS_ASR_Inference_Colab.ipynb)
 
 ### Output
